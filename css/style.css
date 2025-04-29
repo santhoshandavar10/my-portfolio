@@ -1,0 +1,430 @@
+/* ===== Smooth Transition Effect for Theme Switching ===== */
+body,
+nav,
+.section__text,
+.section__pic-container,
+.about-details-container,
+.skills-container,
+.details-container,
+.contact-info-upper-container,
+footer,
+#theme-toggle,
+#projects,
+#certifications,
+#contact {
+  transition: all 0.5s ease;
+}
+
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* ===== Navigation Flex Layout ===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 10vh;
+}
+
+/* Nav Left (Logo) */
+.nav-left {
+  flex: 1;
+}
+
+/* Nav Center (Links) */
+.nav-center {
+  flex: 2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Nav Right (Toggle) */
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Toggle Button Already Styled */
+
+/* ===== Hamburger Menu ===== */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: inherit;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+/* ===== Profile Section (Center default) ===== */
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 4rem 10%;
+  gap: 2rem;
+}
+
+.section__pic-container img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+}
+
+.section__text__p1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.section__text__p2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: grey;
+  margin-bottom: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid currentColor;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Social Icons ===== */
+#socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#socials-container img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#socials-container img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== About Section ===== */
+#about {
+  padding: 4rem 10%;
+  min-height: 100vh;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.about-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid currentColor;
+}
+
+.text-container {
+  max-width: 600px;
+  text-align: justify;
+}
+
+/* ===== Skills Section ===== */
+#skills {
+  padding: 4rem 10%;
+  min-height: 100vh;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-category {
+  text-align: center;
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-category p {
+  font-size: 1rem;
+  color: grey;
+}
+
+/* ===== Projects Section ===== */
+#projects {
+  padding: 4rem 10% 2rem;
+}
+
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.details-container {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid currentColor;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.project-btn {
+  margin-top: 1rem;
+}
+
+/* ===== Certifications Section ===== */
+#certifications {
+  padding: 2rem 10% 4rem;
+}
+
+
+/* ===== Contact Section (Centered and Brighter) ===== */
+#contact {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(0, 255, 0, 0.05); /* Light hacker green background (subtle) */
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 1px solid currentColor;
+  transition: background-color 0.3s ease;
+}
+
+.contact-info-container:hover {
+  background-color: rgba(0, 255, 0, 0.15);
+}
+
+.contact-info-container p, .contact-info-container a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* Hover Effect for links */
+.contact-info-container a:hover {
+  text-decoration: underline;
+}
+
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+/* ===== Toggle Button Fixed Top Right ===== */
+.toggle-container {
+  margin-left: auto;
+}
+
+
+#theme-toggle {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 2px solid currentColor;
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Responsive Mobile View ===== */
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 10vh;
+  }
+
+  #profile {
+    padding-top: 8rem;
+  }
+
+  .section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #socials-container {
+    justify-content: center;
+  }
+}
+
+.arrow {
+  margin: 0;
+  padding: 0;
+  display: none; /* Optional if you don't want arrow at all */
+}
+@media (max-width: 768px) {
+  .toggle-container {
+    top: 4.5rem;
+    right: 1rem;
+  }
+}
+
+
+/* ===== Glassy Navbar Effect ===== */
+nav#desktop-nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.25); /* semi-transparent for Cyber Mode */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.fullstack-mode nav#desktop-nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

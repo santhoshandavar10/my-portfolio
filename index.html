@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santhosh Andavar | Cybersecurity & Fullstack Developer</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+  
+  <link id="dynamic-favicon" rel="icon" type="image/png" href="favicon-cyber.png" />
+</head>
+
+<body class="cybersecurity-mode">
+
+  
+  <!-- Navigation -->
+  <nav id="desktop-nav">
+    <div class="nav-left">
+      <div class="logo">Santhosh Andavar</div>
+    </div>
+  
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  
+    <div class="nav-right">
+      <div class="toggle-container">
+        <button id="theme-toggle" class="btn">Switch to Fullstack Mode</button>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Hamburger Menu (for mobile) -->
+  <nav id="hamburger-nav">
+    <div class="logo">Santhosh Andavar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/images/profile-pic.png" alt="Santhosh Andavar profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title" id="typing-text">Santhosh Andavar</h1>
+      <p class="section__text__p2">Full-Stack Developer | Cybersecurity Enthusiast</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('assets/pdf/santhosh-resume.pdf')">Download Resume</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="assets/images/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/santhoshandavar', '_blank')" />
+        <img src="assets/images/github.png" alt="Github" class="icon" onclick="window.open('https://github.com/santhoshandavar10', '_blank')" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="assets/images/about-pic.png" alt="About Picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="text-container">
+          <p>
+            I am a Computer Science graduate passionate about Full-Stack Development and Cybersecurity, holding certifications including IBM Full-Stack Development and Google Cybersecurity Professional Certificate.
+            <br><br>
+            With hands-on experience building scalable web and mobile applications, cloud computing, AI-powered solutions, and cybersecurity tools, I have developed real-world projects like a Ride Share Web App, an AI-driven Visa Interview Prep Platform, and a Cybersecurity Vulnerability Scanner.
+            <br><br>
+            I am proficient in technologies such as React, Node.js, MongoDB, AWS, Docker, Python, and cybersecurity frameworks like OWASP ZAP. I combine a developer’s creativity with a security-first mindset to build innovative, resilient solutions.
+            <br><br>
+            I am committed to continuous learning and excited to contribute to organizations that value innovation, security, and impactful technology.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#skills'" />
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">> Skills</h2>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <p>Java, Python, JavaScript, C++</p>
+      </div>
+      <div class="skill-category">
+        <h3>Software Development</h3>
+        <p>System Design, API Development, Microservices</p>
+      </div>
+      <div class="skill-category">
+        <h3>Web Technologies</h3>
+        <p>HTML, CSS, JavaScript, React, Ruby, Node.js</p>
+      </div>
+      <div class="skill-category">
+        <h3>Databases</h3>
+        <p>MySQL, MongoDB, PostgreSQL</p>
+      </div>
+      <div class="skill-category">
+        <h3>Cloud & DevOps</h3>
+        <p>AWS, Docker, Kubernetes, CI/CD, Git/GitHub</p>
+      </div>
+      <div class="skill-category">
+        <h3>AI/ML & Data Science</h3>
+        <p>TensorFlow, NumPy, Pandas, Scikit-learn</p>
+      </div>
+      <div class="skill-category">
+        <h3>Cybersecurity & Blockchain</h3>
+        <p>Ethical Hacking Basics, Solidity, Cryptography</p>
+      </div>
+      <div class="skill-category">
+        <h3>Tools & Platforms</h3>
+        <p>VS Code, IntelliJ, Postman, Linux, Cursor, Git, PyCharm, Jupyter Notebook</p>
+      </div>
+      <div class="skill-category">
+        <h3>Core Technical Skills</h3>
+        <p>Data Structures, Algorithms, Software Development</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers"><div class="details-container color-container">
+        <div class="article-container">
+          <img src="assets/images/cli.png" alt="CLI Password Manager" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">CLI Password Manager</h2>
+        <p>A terminal-based app to securely manage and encrypt your saved passwords. Built using Python and Cryptography libraries.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/santhoshandavar10/PasswordManager')">GitHub</button>
+          <button class="btn btn-color-2 project-btn" onclick="window.open('https://pypi.org/project/passwordmanager-santhosh/')">PyPI Package</button>
+        </div>
+      </div>
+      
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/images/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Ride Share Web Application</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/rkeyur1234/Senior-Design')">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://YOUR_LIVE_LINK.com')">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/images/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Interview Ace - AI Interview Prep</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/YOUR_INTERVIEWACE_LINK')">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://YOUR_LIVE_LINK.com')">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/images/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Cybersecurity Vulnerability Scanner</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/YOUR_CYBERSECURITYSCANNER_LINK')">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://YOUR_LIVE_LINK.com')">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#certifications'" />
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <p class="section__text__p1">Achievements</p>
+    <h1 class="title">Certifications</h1>
+    <div class="experience-details-container">
+      <div class="details-container color-container">
+        <h3>IBM Full-Stack Software Developer</h3>
+      </div>
+      <div class="details-container color-container">
+        <h3>Google Cybersecurity Professional Certificate</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="assets/images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:santhoshandavar2@gmail.com">santhoshandavar2@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="assets/images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/santhoshandavar" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p>© 2025 Santhosh Andavar. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

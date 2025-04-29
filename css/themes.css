@@ -1,0 +1,202 @@
+/* ===== CYBERSECURITY MODE - Ethical Hacker Theme ===== */
+.cybersecurity-mode {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Navigation Links */
+  .cybersecurity-mode nav a {
+    color: #00FF00;
+  }
+  
+  .cybersecurity-mode nav a:hover {
+    color: #00cc00;
+  }
+  
+  /* Buttons */
+  .cybersecurity-mode .btn {
+    border-color: #00FF00;
+    color: #00FF00;
+  }
+  
+  .cybersecurity-mode .btn:hover {
+    background: #00FF00;
+    color: #000000;
+  }
+  
+  /* Section Titles */
+  .cybersecurity-mode .title {
+    text-shadow: none;
+    border-bottom: 2px solid #00FF00;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Projects and Certifications Container */
+  .cybersecurity-mode .details-container {
+    border-color: #00FF00;
+  }
+  
+  /* Toggle Button */
+  .cybersecurity-mode #theme-toggle {
+    border-color: #00FF00;
+    color: #00FF00;
+  }
+  
+  
+  /* Fix for Social Icons in Cybersecurity Mode */
+.cybersecurity-mode #socials-container img,
+.cybersecurity-mode .contact-icon {
+  background-color: #00FF00;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Cybersecurity Mode - Social Icons Background */
+.cybersecurity-mode #socials-container img {
+    background-color: #00FF00;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  /* ========================== */
+/*      FULLSTACK MODE       */
+/* ========================== */
+.fullstack-mode {
+  background-color: #f7f9fc;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar */
+.fullstack-mode nav#desktop-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  backdrop-filter: none;
+}
+
+/* Buttons */
+.fullstack-mode .btn {
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.fullstack-mode .btn-color-1 {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+}
+
+.fullstack-mode .btn-color-1:hover {
+  background-color: #004ecc;
+}
+
+.fullstack-mode .btn-color-2 {
+  background-color: transparent;
+  color: #0066ff;
+  border: 2px solid #0066ff;
+}
+
+.fullstack-mode .btn-color-2:hover {
+  background-color: #0066ff;
+  color: white;
+}
+
+/* Profile Section */
+.fullstack-mode #profile {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 10%;
+}
+
+/* Project Cards */
+.fullstack-mode .details-container {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.fullstack-mode .details-container:hover {
+  transform: translateY(-4px);
+}
+
+.fullstack-mode .project-img {
+  border-radius: 12px 12px 0 0;
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Skills Section */
+.fullstack-mode .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+/* Contact Section */
+.fullstack-mode #contact {
+  background-color: #ffffff;
+}
+
+.fullstack-mode .contact-info-upper-container {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+.fullstack-mode footer {
+  background-color: transparent;
+  color: #333;
+}
+
+.fullstack-mode .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.fullstack-mode .skill-block {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.fullstack-mode .skill-block:hover {
+  transform: translateY(-4px);
+}
+
+.fullstack-mode .skill-block h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #0066ff;
+}
+
+.fullstack-mode .skill-block ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.fullstack-mode .skill-block ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
